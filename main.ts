@@ -1,8 +1,3 @@
-input.onButtonPressed(Button.A, function () {
-    if (true) {
-    	
-    }
-})
 input.onButtonPressed(Button.AB, function () {
     pins.analogWritePin(AnalogPin.P0, 100)
     basic.pause(0o1)
@@ -12,7 +7,7 @@ input.onButtonPressed(Button.AB, function () {
     basic.pause(0o1)
     pins.analogWritePin(AnalogPin.P3, 100)
     basic.pause(0o1)
-    pins.analogWritePin(AnalogPin.P4, 100)
+    pins.digitalWritePin(DigitalPin.P5, 100)
     basic.pause(0o1)
-    pins.analogWritePin(AnalogPin.P5, 100)
+    pins.digitalWritePin(DigitalPin.P10, 100)
 })
